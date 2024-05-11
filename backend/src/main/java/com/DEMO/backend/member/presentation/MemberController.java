@@ -16,7 +16,7 @@ public class MemberController {
     private final MemberService memberService;
 
     @GetMapping("/login")
-    public ResponseEntity<Void> login(SignUpRequest request) {
+    public ResponseEntity<Void> signUp(SignUpRequest request) {
         memberService.signUp(request);
 
         return ResponseEntity.ok().build();
